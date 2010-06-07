@@ -2,6 +2,7 @@ Rails3Blog::Application.routes.draw do |map|
   namespace :admin do
     resources :posts
   end
+  resources :posts, :only => [:index, :show]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
